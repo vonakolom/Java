@@ -1,0 +1,12 @@
+public class MyCode{
+    public static void main(String[] args){
+        double a,p,r; // a - площадь, p - пи(3,14), r - радиус
+        p = 3.14159265358979323846264;
+        r = ;
+        a = p*(r*r);
+
+
+        System.out.println("Площать круга при радиусе  "+ r + " будет равена =" + a);
+
+    }
+}
