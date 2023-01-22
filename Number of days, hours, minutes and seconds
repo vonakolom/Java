@@ -1,0 +1,14 @@
+public class Seconds{
+    public static void main(String[] args){
+        int seconds = 86400;
+        int days = seconds/86400;
+        int hour = (seconds%86400)/3600;
+        int minutes = ((seconds%86400)%3600)/60;
+        int leftseconds =((seconds%86400)%3600)%60;
+        System.out.println("Количество дней = " + days);
+        System.out.println("Количество часов = " + hour);
+        System.out.println("Количество минут = " + minutes);
+        System.out.println("Количество секунд = " + leftseconds);
+
+    }
+}
