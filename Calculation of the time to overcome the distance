@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class DistanceSpeedTime{
+    public static void main(String[] args){
+        double distance, speed, time;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите дистанцию в км. и скорость в км/ч. через пробел: ");
+        distance = input.nextDouble();
+        speed = input.nextDouble();
+        time = distance/speed;
+        System.out.println("Для преодоления " + distance + "км. со скоростью " + speed +
+                "км/ч. потребуется " + time + "ч." );
+    }
+}
