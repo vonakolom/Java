@@ -1,0 +1,24 @@
+import java.util.Scanner;                         /* класс Scanner(считывает ввод данных из консоли)
+                                                     находится в пакете java.util.
+                                                     import - директория */
+public class ComputeAreaWithConstant{            // public - публичный класс
+    public static void main(String[] args){
+        final double PI = 3.14159;               /* final - константа
+                                                   double - тип с плавающей точкой */
+        double radius;
+        double area;
+
+        Scanner input = new Scanner(System.in);  /* input - ввод
+                                                    System.in - ввод */
+
+        // получить радиус крга
+        System.out.print("Введите радиус круга: ");
+        radius = input.nextDouble();
+
+        // вычислить площадь круга
+        area = PI * radius * radius;
+
+        // отобразить площадь круга
+        System.out.println("Площадь круга с радиусом " + radius + " равна " + area + ".");
+    }
+}
