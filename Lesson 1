@@ -5,3 +5,4 @@ public class NewLine{
         System.out.println("3 line");
     }
 }
+
