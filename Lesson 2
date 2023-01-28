@@ -1,0 +1,14 @@
+public class Time{
+    public static void main(String[] args){
+        int seconds = 86400;
+        int days = seconds/86400;
+        int watch = (seconds%86400)/3600;
+        int minutes = ((seconds%86400)%3600)/60;
+        int leftseconds = ((seconds%86400)%3600)%60;
+        System.out.println("В "+ seconds + " :");
+        System.out.println("Дней: " + days);
+        System.out.println("Часов: " + watch);
+        System.out.println("Минут: " + minutes);
+        System.out.println("Секунд: " + leftseconds);
+    }
+}
