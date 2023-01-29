@@ -1,0 +1,17 @@
+public class Price {
+    public static void main(String[] args) {
+        int money = 5000;
+        if (money >= 5000) {
+            System.out.println("Audi A8");
+        }
+        else if (money >= 4000){
+            System.out.println("Audi A6");
+        }
+        else if (money >= 3000){
+            System.out.println("Audi A4");
+        }
+        else {
+            System.out.println("Audi A2");
+        }
+    }
+}
