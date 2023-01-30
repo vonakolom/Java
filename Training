@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+import static java.text.ChoiceFormat.nextDouble;
+
+public class CircumferenceLength{
+    public static void main(String[] args){
+        final double PI = 3.14159;
+        double radius, length;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите радиус окружности: ");
+        radius = input.nextDouble();
+        length = 2 * PI * radius;
+        System.out.println("Длинна окружности =  " + length);
+
+    }
+}
