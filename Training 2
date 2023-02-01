@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class GeometricRoot{
+    public static void main(String[] args) {
+        double x_1, x_2, x_3, gr;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ведите три числа через пробел: ");
+        x_1 = input.nextDouble();
+        x_2 = input.nextDouble();
+        x_3 = input.nextDouble();
+        gr = Math.cbrt(x_1 * x_2 * x_3);
+        System.out.println("Среднее геометрическое= " + gr);
+
+    }
+}
