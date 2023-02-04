@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class ConverAmount{
+    public static void main(String[] args){
+        final double RUB_PER_EURO = 73.95;
+        int euro;
+        double rub;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите значение в Евро: ");
+        euro = input.nextInt();
+        rub = euro * RUB_PER_EURO;
+        System.out.println("Сумма равна: " + (int)(rub*100)/100.00 + " руб.");
+
+    }
+}
