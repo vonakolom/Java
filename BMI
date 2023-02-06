@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Bmi {
+    public static void main(String[] args) {
+        double weight, height_m, height_c, bmi;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите вес в кг: ");
+        weight = input.nextDouble();
+        System.out.print("Введите рост, кол-во метров: ");
+        height_m = input.nextDouble();
+        System.out.print("Введите сантиметры: ");
+        height_c = input.nextDouble();
+        bmi = weight/((height_m + height_c/100) * (height_m + height_c/100));
+        if(bmi < 18.5)
+            System.out.println("BMI равен: " + bmi + (" Недостаток"));
+        else if (bmi < 25.0)
+            System.out.println("BMI равен: " + bmi + (" Норма"));
+        else if (bmi < 30.0)
+            System.out.println("BMI равен: " + bmi + (" Избыточный"));
+        else
+        System.out.println("BMI равен: " + bmi + (" Ожирение"));
+
+
+    }
+}
