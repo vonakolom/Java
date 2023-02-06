@@ -9,6 +9,6 @@ public class ThePythagoreanTheorem{
         System.out.print("Введите значение катета В: ");
         cathet_b = imput.nextInt();
         hypotenuse = Math.sqrt((cathet_a * cathet_a) + (cathet_b * cathet_b));
-        System.out.println("Значение гипотенузы равна: " + hypotenuse);
+        System.out.println("Значение гипотенузы равно: " + hypotenuse);
     }
 }
