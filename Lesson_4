@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class ThePythagoreanTheorem{
+    public static void main(String[] args) {
+        int cathet_a, cathet_b;
+        double hypotenuse;
+        Scanner imput = new Scanner (System.in);
+        System.out.print("Введите значение катета А: ");
+        cathet_a = imput.nextInt();
+        System.out.print("Введите значение катета В: ");
+        cathet_b = imput.nextInt();
+        hypotenuse = Math.sqrt((cathet_a * cathet_a) + (cathet_b * cathet_b));
+        System.out.println("Значение гипотенузы равна: " + hypotenuse);
+    }
+}
