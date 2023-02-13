@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Conver{
+    public static void main(String[] args){
+        final double RUB_PER_DLR =72.12;
+        double rub;
+        int dollars;
+        int digit;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Ведите кол-во $: ");
+        dollars = input.nextInt();
+        System.out.print(dollars);
+        if(dollars<=9)
+            System.out.print("$");
+        else if(dollars<=99)
+                System.out.print("$$");
+        else
+            System.out.print("$$$");
+        rub = dollars*RUB_PER_DLR;
+        System.out.println(" = " + (int)(rub*100)/100.0 + " руб.");
+
+
+
+    }
+}
