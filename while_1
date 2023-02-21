@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Com_Sal{
+    public static void main(String[] args){
+        int number_emp, count_emp;                    // кол-во сотрудников . текущий сотрудник
+        double hours, rate, pay, total_pay;           // отр.часы. ставка . з/п . общая з/п
+
+        Scanner input = new Scanner (System.in);
+        System.out.print("Введите кол-во сотрудников компании: ");
+        number_emp = input.nextInt();
+
+        total_pay = 0.0;
+        count_emp = 0;
+
+        while (count_emp < number_emp){
+            System.out.print("Введите отработанные часы: ");
+            hours = input.nextDouble();
+            System.out.print("Ставка за час: ");
+            rate = input.nextDouble();
+            pay = hours * rate;
+            System.out.println("З/п = " + pay);
+
+            total_pay += pay;
+            ++count_emp;
+
+        }
+        System.out.println("\nВсе сотрудники расчитаны\n");
+        System.out.println("Общая з/п компании = "+ total_pay);
+
+    }
+}
