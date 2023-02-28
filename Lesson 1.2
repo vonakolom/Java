@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Time_3{
+    public static void main(String[] args){
+        int years, months, days, left_days;
+        int DAY_YER = 365;
+        int DAY_MON = 31;
+        Scanner input = new Scanner (System.in);
+        System.out.print("Введите кол-во дней: ");
+        days = input.nextInt();
+        years = days / DAY_YER;
+        months = (days % DAY_YER)/DAY_MON;
+        left_days = days - (years * DAY_YER) - (months * DAY_MON);
+        System.out.println("В " + days + " д.: " + years + " г. " + months + " мес. " + left_days + " д.");
+
+    }
+}
