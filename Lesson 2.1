@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Menu{
+    public static void main(String[] args){
+        int money;
+        Scanner input = new Scanner (System.in);
+        System.out.print("Ведите кол-во средст для подбора меню в рублях: ");
+        money = input.nextInt();
+        if (money >= 500)
+            System.out.println("Возьмите Биг Комбо за 499 руб. Остаток средст = " + (money - 499) + " руб.");
+        else if (money >=300)
+            System.out.println("Возьмите Комбо за 289 руб. Остаток средств = " + (money - 289) + " руб.");
+        else if(money >= 100)
+            System.out.println("Возмите Двойной гамбургер за 69 руб. Остаток средств = " + (money - 69) + "руб.");
+        else if (money >0 )
+            System.out.println("Возьмите гамбургер по акции за 1 руб. Остаток средств = " + (money - 1) + " руб.");
+        else
+            System.out.println("За такую стоимость отсутствует еда.");
+
+    }
+}
