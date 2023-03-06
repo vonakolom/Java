@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Cycle {
+    public static void main(String[] args) {
+        int i;
+        Scanner input = new Scanner(System.in);
+        System.out.print("введите число от которого будут выводиться числа до 10: ");
+        i = input.nextInt();
+        if(i > 10)
+            while(i >= 10){
+                System.out.println(i);
+                i--;
+
+
+        }
+        else if(i < 10)
+            while(i <= 10){
+                System.out.println(i);
+                i++;
+            }
+        else
+            System.out.println("10 вводить нельзя");
+
+
+    }
+}
