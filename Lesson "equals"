@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Season{
+    public static void main(String[] args){
+        String month;
+        String name_1 = "Январь";
+        String name_2 = "Февраль";
+        String name_3 = "Март";
+        String name_4 = "Апрель";
+        String name_5 = "Май";
+        String name_6 = "Июнь";
+        String name_7 = "Июль";
+        String name_8 = "Август";
+        String name_9 = "Сентябрь";
+        String name_10 = "Октябрь";
+        String name_11 = "Ноябрь";
+        String name_12 = "Декабрь";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Введите название месяца: ");
+        month = input.next();
+        if(month.equalsIgnoreCase(name_1))
+            System.out.println("Зима");
+        else if(month.equalsIgnoreCase(name_2))
+            System.out.println("Зима");
+        else if(month.equalsIgnoreCase(name_3))
+            System.out.println("Весна");
+        else if(month.equalsIgnoreCase(name_4))
+            System.out.println("Весна");
+        else if(month.equalsIgnoreCase(name_5))
+            System.out.println("Весна");
+        else if(month.equalsIgnoreCase(name_6))
+            System.out.println("Лето");
+        else if(month.equalsIgnoreCase(name_7))
+            System.out.println("Лето");
+        else if(month.equalsIgnoreCase(name_8))
+            System.out.println("Лето");
+        else if(month.equalsIgnoreCase(name_9))
+            System.out.println("Осень");
+        else if(month.equalsIgnoreCase(name_10))
+            System.out.println("Осень");
+        else if(month.equalsIgnoreCase(name_11))
+            System.out.println("Осень");
+        else if(month.equalsIgnoreCase(name_12))
+            System.out.println("Зима");
+        else
+            System.out.println("Такого месяца не существует");
+
+    }
+}
