@@ -1,0 +1,50 @@
+public class Main{
+    public static void main(String[] args){
+        Auto audi = new Auto();
+        audi.name = "A9 Concept";
+        audi.speed = 300;
+        audi.engCap = 4000;
+
+        Auto bmw = new Auto();
+        bmw.name = "X9";
+        bmw.speed = 295;
+        bmw.engCap = 5500;
+
+        Auto wv = new Auto();
+        wv.name = "Golf9";
+        wv.speed = 305;
+        wv.engCap = 3000;
+
+
+
+        double speedSum;
+        double speedId;
+        speedSum = audi.speed + bmw.speed + wv.speed;
+        speedId = speedSum / 3;
+
+        double engCapSum = audi.engCap + bmw.engCap + wv.engCap;
+        double engCapId = (int)(engCapSum / 3);
+
+        System.out.print("Суммарная скорость всех автомобилей равна " + speedSum + " km/h."+ "\nСредняя скорость равна " + speedId + " km/h.");
+        System.out.println("\nСуммарный объём двигателя равен " + engCapSum + " sm3"+ "\nСредний объём равен " + engCapId + " sm3");
+
+        System.out.println("Самый быстрый автомобиль: ");
+        if(audi.speed > bmw.speed && audi.speed > wv.speed)
+            System.out.println("Audi A9");
+        if(bmw.speed > audi.speed && bmw.speed > wv.speed)
+            System.out.println("BMW X9");
+        else
+            System.out.println("WV Golf9");
+
+        System.out.println("Самый объёмый двигатель: ");
+        if(audi.engCap > bmw.engCap && audi.engCap > wv.engCap)
+            System.out.println("Audi A9");
+        if(bmw.engCap > audi.engCap && bmw.engCap > wv.engCap)
+            System.out.println("BMW X9");
+        else
+            System.out.println("WV Golf9");
+
+
+
+  }
+}
