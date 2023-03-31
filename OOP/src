@@ -1,1 +1,8 @@
+public class Auto{
+    String name;
 
+    int speed;
+    double engCap;
+
+
+}
