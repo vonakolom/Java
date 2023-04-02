@@ -1,0 +1,18 @@
+public class Main{
+    public static void main(String[] args){
+        Chess pawnBlack = new Chess();
+        Chess pawnWhite = new Chess();
+        pawnBlack.piece = "PawnBlack";
+        pawnBlack.x = "B";
+        pawnBlack.y = "2";
+        pawnWhite.piece = "PawnWhite";
+        pawnWhite.x = "H";
+        pawnWhite.y = "2";
+
+        pawnBlack.showposition();
+        pawnWhite.showposition();
+
+
+
+    }
+}
