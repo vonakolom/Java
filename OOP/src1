@@ -1,1 +1,13 @@
+public class Ski {
 
+    String name;
+    int rigidity;
+    double sliding;
+    int rolling;
+
+    void showrolling(){
+        double rolling = rigidity * sliding;
+        System.out.println((int)rolling);
+    }
+
+}
