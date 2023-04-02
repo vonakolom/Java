@@ -1,0 +1,11 @@
+public class Chess{
+    String piece;
+    String x;
+    String y;
+    String position;
+    void showposition(){
+        String position = x + y;
+        System.out.println(position);
+
+    }
+}
