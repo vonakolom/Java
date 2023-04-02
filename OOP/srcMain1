@@ -1,0 +1,24 @@
+public class Main{
+    public static void main(String[] args){
+        Ski fischer = new Ski();
+        Ski salomon = new Ski();
+        Ski rossignol = new Ski();
+
+        fischer.name = "Speedmax";
+        fischer.rigidity = 90;
+        fischer.sliding = 2.3;
+
+        salomon.name = "S/Lab";
+        salomon.rigidity = 87;
+        salomon.sliding = 2.4;
+
+        rossignol.name = "X-Ium";
+        rossignol.rigidity = 91;
+        rossignol.sliding = 2.2;
+
+        fischer.showrolling();
+        salomon.showrolling();
+        rossignol.showrolling();
+
+   }
+}
